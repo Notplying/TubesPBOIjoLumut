@@ -18,7 +18,7 @@ public class controller {
     
     public boolean isOccupied(int index) 
     {
-        return index >= 0 && index < listItem.size();
+        return index >= 0 && index < listItem.size() && listItem.get(index) != null;
     }
 
     public void tambahItem(item Item) 
@@ -58,7 +58,7 @@ public class controller {
 
     public void pindahLokasi(int lokasiAwal, int lokasiAkhir) 
     {
-        if (isOccupied(lokasiAwal) && lokasiAkhir >= 0) {
+        if (isOccupied(lokasiAwal) && lokasiAkhir >= 0 && lokasiAkhir < listItem.size() && !isOccupied(lokasiAkhir)) {
             item Item = listItem.get(lokasiAwal);
             listItem.remove(lokasiAwal);
             listItem.add(lokasiAkhir, Item);
