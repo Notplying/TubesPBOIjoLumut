@@ -206,7 +206,7 @@ public class controllerTable {
     void selectExpired(GUI gui) {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
         for (int i = 0; i < gui.jTable2.getRowCount(); i++) {
-            String perishableText = (String) gui.jTable2.getValueAt(i, 6);
+            String perishableText = (String) gui.jTable2.getValueAt(i, 5);
             if (perishableText.equals("-")) {
                 continue;
             }
@@ -222,7 +222,7 @@ public class controllerTable {
             }
         }
         for (int i = 0; i < gui.jTable2.getRowCount(); i++) {
-            String perishableText = (String) gui.jTable2.getValueAt(i, 6);
+            String perishableText = (String) gui.jTable2.getValueAt(i, 5);
             if (perishableText.equals("-")) {
                 continue;
             }

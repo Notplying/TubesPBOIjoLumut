@@ -616,7 +616,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void buttonExpiredActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonExpiredActionPerformed
         // TODO add your handling code here:
-            conTable.selectExpired(this);
+        conTable.selectExpired(this);
     }//GEN-LAST:event_buttonExpiredActionPerformed
 
     private void DeleteGudangButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DeleteGudangButtonActionPerformed
