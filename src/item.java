@@ -13,7 +13,7 @@ import java.util.Date;
  */
 public class item {
     private int uniqueID;
-    private int produkID;
+    //private int produkID;
     private String itemName;
     private String kategori;
     private String lokasi;
@@ -21,7 +21,7 @@ public class item {
     
     public item(int uniqueID, int produkID, String itemName, String kategori, String lokasi, int quantity){
         this.uniqueID=uniqueID;
-        this.produkID=produkID;
+        //this.produkID=produkID;
         this.itemName=itemName;
         this.kategori=kategori;
         this.lokasi=lokasi;
@@ -45,6 +45,7 @@ public class item {
         this.uniqueID = uniqueID;
     }
 
+    /***
     public int getProdukID() {
         return produkID;
     }
@@ -52,7 +53,7 @@ public class item {
     public void setProdukID(int produkID) {
         this.produkID = produkID;
     }
-
+***/
     public String getItemName() {
         return itemName;
     }
